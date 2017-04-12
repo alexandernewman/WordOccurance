@@ -1,0 +1,4 @@
+This should
+output a
+reasonable string
+of values am I right
