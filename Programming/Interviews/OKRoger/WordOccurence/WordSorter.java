@@ -9,6 +9,7 @@
  */
 
 import java.util.HashMap;
+import java.util.Set;
 import java.util.Scanner;
 import java.io.*;
 import java.util.regex.*;
@@ -16,10 +17,41 @@ import java.net.*;
 
 public class WordSorter {
     private HashMap<String, Integer> vals; //Stores word as key, frequency as value
+    private boolean ignorecaps; //Ignores capitalization
+    private boolean keepchars; //Keeps !?; and other special characters
+    private String prefix;
 
-    /* Constructs WordSorter */
+    /* Constructs WordSorter without args */
     public WordSorter() {
         vals = new HashMap<>();
+        ignorecaps = true;
+    }
+    /* Checks if we care about capitalization
+    *  If we do care, should input false
+    *  */
+    public WordSorter(String x) {
+        vals = new HashMap<>();
+        ignorecaps = true;
+        keepchars = false;
+        if (x.equals("caps")) {
+            ignorecaps = false;
+        }
+        if (x.equals("special")){
+            keepchars = true;
+        }
+
+    }
+
+    public WordSorter(String x, String y) {
+        vals = new HashMap<>();
+        ignorecaps = true;
+        keepchars = false;
+        if (x.equals("caps") || y.equals("caps")) {
+            ignorecaps = false;
+        }
+        if (x.equals("special") || y.equals("special")) {
+            keepchars = true;
+        }
     }
 
     //Determines input type, reads file correspondingly
@@ -33,6 +65,7 @@ public class WordSorter {
             return "Not a valid type!";
         }
     }
+
 
     /* Similar to readlocal except using URL*/
     private String readURL(URL filename) {
@@ -76,9 +109,16 @@ public class WordSorter {
             String[] linewords = replacedline.trim().split(" "); //Splits by space
             for (String x : linewords) { //for each word on line
                 if (!x.equals("") && !x.equals("]")) {
-                    String newx = processWord(x);
-                    mapadd(newx.toLowerCase()); //ignores capitalization, adds to vals
-                }
+                    String newx = x;
+                    if (!keepchars) { //Gets rid of special character
+                        newx = processWord(x);
+                    }
+                    if (ignorecaps) {
+                        mapadd(newx.toLowerCase()); //ignores capitalization, adds to vals
+                    } else {
+                        mapadd(newx); //Does not ignore caps
+                    }
+                    }
             }
         }
     }
@@ -106,9 +146,36 @@ public class WordSorter {
     /* Creates string with first column word, second column frequency*/
     private String stringcreate(HashMap<String, Integer> vals) {
         String valstring = "";
+        if (prefix != null) {
+            return matchhelper(prefix);
+        }
         for (String x : vals.keySet()) {
             valstring += x + ", " + vals.get(x) + "\n";
         }
         return valstring;
+    }
+
+    private String matchhelper(String prefix){
+        String valstring = "";
+        char[] pre = prefix.toCharArray();
+        for (String x : vals.keySet()) {
+            char[] y = x.toCharArray();
+            int match = 0;
+            for (int i = 0; i < pre.length; i ++) {
+                if (pre.length > x.length() || pre[i] != y[i]) {
+                    break;
+                }
+                match += 1;
+            }
+            if (match == pre.length) {
+                valstring += x + ", " + vals.get(x) + "\n";
+            }
+        }
+        return valstring;
+    }
+
+    public String match(Object filename, String instring){
+        this.prefix = instring;
+        return read(filename);
     }
 }
