@@ -162,5 +162,30 @@ public class TestWordSort {
     }
     //Output: !this, 3
 
+    /* Tests average word length of Alice in Wonderland */
+    @Test
+    public void AliceWordLengthTest() {
+        try {
+            URL z = new URL("http://www.umich.edu/~umfandsf/other/ebooks/alice30.txt");
+            WordSorter test = new WordSorter();
+            System.out.print(test.averageWordLength(z)); //searches file, average word length
+        } catch (MalformedURLException e) {
+            System.out.println("Not a valid URL!");
+        }
+    }
+    /* Output: 4.0612597 */
 
+    /* Tests averge word length of Alice in Wonderland words with words beginning with "al" */
+    @Test
+    public void AliceMatchWordLengthTest() {
+        try {
+            URL z = new URL("http://www.umich.edu/~umfandsf/other/ebooks/alice30.txt");
+            WordSorter test = new WordSorter();
+            System.out.print(test.averageMatchWordLength(z, "al")); //searches file, average word length of "al"
+        } catch (MalformedURLException e) {
+            System.out.println("Not a valid URL!");
+        }
+    } /* Output: 4.5297804 */
+
+    //TODO: AWL with special characters and stuff
 }

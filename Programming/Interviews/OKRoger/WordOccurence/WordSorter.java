@@ -35,8 +35,7 @@ public class WordSorter {
         keepchars = false;
         if (x.equals("caps")) {
             ignorecaps = false;
-        }
-        if (x.equals("special")){
+        } else if (x.equals("special")){
             keepchars = true;
         }
 
@@ -146,17 +145,18 @@ public class WordSorter {
     /* Creates string with first column word, second column frequency*/
     private String stringcreate(HashMap<String, Integer> vals) {
         String valstring = "";
+        HashMap<String, Integer> newvals = vals;
         if (prefix != null) {
-            return matchhelper(prefix);
+            newvals = matchhelper(prefix);
         }
-        for (String x : vals.keySet()) {
+        for (String x : newvals.keySet()) {
             valstring += x + ", " + vals.get(x) + "\n";
         }
         return valstring;
     }
 
-    private String matchhelper(String prefix){
-        String valstring = "";
+    private HashMap matchhelper(String prefix){
+        HashMap valmap = new HashMap();
         char[] pre = prefix.toCharArray();
         for (String x : vals.keySet()) {
             char[] y = x.toCharArray();
@@ -168,14 +168,34 @@ public class WordSorter {
                 match += 1;
             }
             if (match == pre.length) {
-                valstring += x + ", " + vals.get(x) + "\n";
+                valmap.put(x, vals.get(x));
             }
         }
-        return valstring;
+        return valmap;
     }
 
     public String match(Object filename, String instring){
         this.prefix = instring;
         return read(filename);
     }
+
+    float averageWordLength(Object filename) {
+        String useless = read(filename);
+        HashMap<String, Integer> newvals = vals;
+        if (prefix != null) {
+            newvals = matchhelper(prefix);
+        }
+        float wordlength =  Float.parseFloat("0.00");
+        float numwords = Float.parseFloat("0.00");
+        for (String x : newvals.keySet()) {
+            wordlength += x.length() * newvals.get(x);
+            numwords += newvals.get(x);
+        }
+        return wordlength/numwords;
+    }
+    float averageMatchWordLength(Object filename, String prefix) {
+        this.prefix = prefix;
+        return averageWordLength(filename);
+    }
+
 }

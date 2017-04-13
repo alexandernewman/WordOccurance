@@ -19,13 +19,18 @@
       <file leaf-file-name="WordSorter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WordSorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="164" column="46" lean-forward="false" selection-start-line="164" selection-start-column="46" selection-end-line="164" selection-end-column="46" />
+            <state relative-caret-position="205">
+              <caret line="181" column="4" lean-forward="false" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#4340#4341#0" expanded="true" />
-                <element signature="e#4401#4402#0" expanded="true" />
+                <element signature="method#readURL#0;class#WordSorter#0" expanded="false" />
+                <element signature="method#readlocal#0;class#WordSorter#0" expanded="false" />
+                <element signature="method#wordcheck#0;class#WordSorter#0" expanded="false" />
+                <element signature="e#4337#4338#0" expanded="true" />
+                <element signature="e#4398#4399#0" expanded="true" />
+                <element signature="method#mapadd#0;class#WordSorter#0" expanded="false" />
+                <element signature="method#match#0;class#WordSorter#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -34,12 +39,22 @@
       <file leaf-file-name="TestWordSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestWordSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="144" column="17" lean-forward="false" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
+            <state relative-caret-position="358">
+              <caret line="169" column="32" lean-forward="true" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matchAndSpecialTestinput.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matchAndSpecialTestinput.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,9 +107,13 @@
         <option value="$PROJECT_DIR$/specialAndCapsTestinput.txt" />
         <option value="$PROJECT_DIR$/specialAndCapsTestoutput.txt" />
         <option value="$PROJECT_DIR$/basicmatchTestoutput.txt" />
-        <option value="$PROJECT_DIR$/WordSorter.java" />
         <option value="$PROJECT_DIR$/AliceMatchTestoutput.tx" />
+        <option value="$PROJECT_DIR$/blankmatchTestoutput.txt" />
+        <option value="$PROJECT_DIR$/matchAndCapsTest.txt" />
+        <option value="$PROJECT_DIR$/matchAndSpecialTestinput.txt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/TestWordSort.java" />
+        <option value="$PROJECT_DIR$/WordSorter.java" />
       </list>
     </option>
   </component>
@@ -143,91 +162,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.TestWordSort.blankmatchTest">
-    <configuration default="false" name="TestWordSort.malformedinputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="WordOccurence" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
-      <option name="METHOD_NAME" value="malformedinputTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestWordSort.blankDocumentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="WordOccurence" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
-      <option name="METHOD_NAME" value="blankDocumentTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestWordSort.basicmatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="WordOccurence" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
-      <option name="METHOD_NAME" value="basicmatchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestWordSort.AliceMatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="WordOccurence" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
-      <option name="METHOD_NAME" value="AliceMatchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestWordSort.AliceWordLengthTest">
     <configuration default="false" name="TestWordSort.blankmatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="WordOccurence" />
@@ -236,6 +171,90 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestWordSort" />
       <option name="METHOD_NAME" value="blankmatchTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestWordSort.matchAndCapsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WordOccurence" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
+      <option name="METHOD_NAME" value="matchAndCapsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestWordSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WordOccurence" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestWordSort.matchAndSpecialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WordOccurence" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
+      <option name="METHOD_NAME" value="matchAndSpecialTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestWordSort.AliceWordLengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="WordOccurence" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestWordSort" />
+      <option name="METHOD_NAME" value="AliceWordLengthTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -454,19 +473,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestWordSort.malformedinputTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestWordSort.blankDocumentTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestWordSort.basicmatchTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestWordSort.AliceMatchTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestWordSort.blankmatchTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestWordSort.blankmatchTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestWordSort.matchAndCapsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestWordSort" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestWordSort.matchAndSpecialTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestWordSort.AliceWordLengthTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestWordSort.blankmatchTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestWordSort.AliceMatchTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestWordSort.basicmatchTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestWordSort.blankDocumentTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestWordSort.malformedinputTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestWordSort.AliceWordLengthTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestWordSort.matchAndSpecialTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestWordSort" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestWordSort.matchAndCapsTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestWordSort.blankmatchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -484,6 +503,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="TestWordSort - 2017.04.12 at 19h 58m 53s.xml">
+      <configuration name="TestWordSort" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestWordSort_AliceMatchTest - 2017.04.12 at 19h 41m 52s.xml">
       <configuration name="TestWordSort.AliceMatchTest" configurationId="JUnit" />
     </history-entry>
@@ -499,20 +521,17 @@
     <history-entry file="TestWordSort_AliceMatchTest - 2017.04.12 at 19h 45m 12s.xml">
       <configuration name="TestWordSort.AliceMatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWordSort_basicmatchTest - 2017.04.12 at 19h 28m 08s.xml">
-      <configuration name="TestWordSort.basicmatchTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWordSort_basicmatchTest - 2017.04.12 at 19h 28m 49s.xml">
-      <configuration name="TestWordSort.basicmatchTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWordSort_basicmatchTest - 2017.04.12 at 19h 30m 07s.xml">
-      <configuration name="TestWordSort.basicmatchTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestWordSort_basicmatchTest - 2017.04.12 at 19h 31m 09s.xml">
       <configuration name="TestWordSort.basicmatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWordSort_blankDocumentTest - 2017.04.12 at 19h 06m 14s.xml">
-      <configuration name="TestWordSort.blankDocumentTest" configurationId="JUnit" />
+    <history-entry file="TestWordSort_blankmatchTest - 2017.04.12 at 19h 49m 14s.xml">
+      <configuration name="TestWordSort.blankmatchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestWordSort_matchAndCapsTest - 2017.04.12 at 19h 55m 07s.xml">
+      <configuration name="TestWordSort.matchAndCapsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestWordSort_matchAndSpecialTest - 2017.04.12 at 19h 59m 13s.xml">
+      <configuration name="TestWordSort.matchAndSpecialTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -532,7 +551,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -540,7 +559,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32168674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32168674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -586,7 +605,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="76" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -723,19 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WordSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="164" column="46" lean-forward="false" selection-start-line="164" selection-start-column="46" selection-end-line="164" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#4340#4341#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AliceMatchTestoutput.tx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -744,10 +750,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blankmatchTestoutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchAndCapsTestinput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchAndSpecialTestinput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="181" column="4" lean-forward="false" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#readURL#0;class#WordSorter#0" expanded="false" />
+            <element signature="method#readlocal#0;class#WordSorter#0" expanded="false" />
+            <element signature="method#wordcheck#0;class#WordSorter#0" expanded="false" />
+            <element signature="e#4337#4338#0" expanded="true" />
+            <element signature="e#4398#4399#0" expanded="true" />
+            <element signature="method#mapadd#0;class#WordSorter#0" expanded="false" />
+            <element signature="method#match#0;class#WordSorter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestWordSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="144" column="17" lean-forward="false" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
+        <state relative-caret-position="358">
+          <caret line="169" column="32" lean-forward="true" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
