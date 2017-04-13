@@ -5,7 +5,6 @@
  * <p>
  * Used old CS homework to get IDE framework
  * Used StackOverflow for Undesirables and file reading
- * 
  */
 
 import java.util.HashMap;
@@ -38,6 +37,7 @@ public class WordSorter {
         vals = new HashMap<>();
         ignorecaps = true;
     }
+
     /* Checks if we care about capitalization
     *  If we do care, should input false
     *  */
@@ -47,7 +47,7 @@ public class WordSorter {
         keepchars = false;
         if (x.equals("caps")) {
             ignorecaps = false;
-        } else if (x.equals("special")){
+        } else if (x.equals("special")) {
             keepchars = true;
         }
 
@@ -106,7 +106,7 @@ public class WordSorter {
                 }
             } finally {
                 br.close();
-                return stringcreate(vals);
+                return stringcreate(vals); //Creates appropriate string for output
             }
         } catch (Exception e) { //If this
             return "Not a valid file!";
@@ -129,7 +129,7 @@ public class WordSorter {
                     } else {
                         mapadd(newx); //Does not ignore caps
                     }
-                    }
+                }
             }
         }
     }
@@ -146,8 +146,7 @@ public class WordSorter {
     private void mapadd(String val) {
         if (!val.equals("")) {
             if (vals.containsKey(val)) {
-                int f = vals.get(val) + 1;
-                vals.put(val, f);
+                vals.put(val, vals.get(val) + 1);
             } else {
                 vals.put(val, 1);
             }
@@ -167,13 +166,13 @@ public class WordSorter {
         return valstring;
     }
 
-    private HashMap matchhelper(String prefix){
+    private HashMap matchhelper(String prefix) {
         HashMap valmap = new HashMap();
         char[] pre = prefix.toCharArray();
         for (String x : vals.keySet()) {
             char[] y = x.toCharArray();
             int match = 0;
-            for (int i = 0; i < pre.length; i ++) {
+            for (int i = 0; i < pre.length; i++) {
                 if (pre.length > x.length() || pre[i] != y[i]) {
                     break;
                 }
@@ -186,26 +185,27 @@ public class WordSorter {
         return valmap;
     }
 
-    public String match(Object filename, String instring){
+    public String match(Object filename, String instring) {
         this.prefix = instring;
         return read(filename);
     }
 
     float averageWordLength(Object filename) {
-        //TODO: Modularize so I don't have to run this twices
+
         String useless = read(filename);
         HashMap<String, Integer> newvals = vals;
         if (prefix != null) {
             newvals = matchhelper(prefix);
         }
-        float wordlength =  Float.parseFloat("0.00");
+        float wordlength = Float.parseFloat("0.00");
         float numwords = Float.parseFloat("0.00");
         for (String x : newvals.keySet()) {
             wordlength += x.length() * newvals.get(x);
             numwords += newvals.get(x);
         }
-        return wordlength/numwords;
+        return wordlength / numwords;
     }
+
     float averageMatchWordLength(Object filename, String prefix) {
         this.prefix = prefix;
         return averageWordLength(filename);
