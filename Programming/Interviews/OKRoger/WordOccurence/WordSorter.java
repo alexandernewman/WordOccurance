@@ -23,11 +23,11 @@ public class WordSorter {
     /** Goal fulfillment:
      * Phase I: Counts occurences, pushed to Git
      * Basic occurence accounting should work in all circumstances (Seems to return all Alice vals correct)
-     * Used effective word separation - eliminates double dashes (--) and special characters if option called
+     * Used effective word separation - eliminates double dashes (--) as well as special characters if option called
      *
      * Phase II: Can count words and occurences with appropriate prefix
      *
-     * Additional: added average word length of passage; should work for match or not
+     * Additional: added average word length of passage; should work for match or not and with caps
      * */
 
 

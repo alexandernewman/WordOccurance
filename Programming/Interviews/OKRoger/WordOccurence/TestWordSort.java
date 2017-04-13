@@ -18,10 +18,12 @@ public class TestWordSort {
      * they always pass.  The only way that seemed
      * reasonable was to use print statements and
      * inspect. The @Test signs are more for
-     * showing where the various tests are visually. */
+     * showing where the various tests are and
+     * running them separately. */
 
 
     /** Null/error tests: should print either nothing or error message of some kind */
+
     /* Tests that WordSorter prints error when given nonexistent file*/
     @Test
     public void nulllocalTest() {
@@ -83,7 +85,7 @@ public class TestWordSort {
         System.out.print(test.read(a));
     }
 
-    /* Involved test: performs test on Alice in Wonderland */
+    /* Performs basic test on Alice in Wonderland text*/
     @Test
     public void AliceTest() {
         /** Note: Only works for pages that are blank text files
@@ -96,7 +98,6 @@ public class TestWordSort {
         } catch (MalformedURLException e) {
             System.out.println("Not a valid URL!");
         }
-
     }
 
     /** Special parameters test */
@@ -270,5 +271,4 @@ public class TestWordSort {
         long tEnd = System.currentTimeMillis();
         System.out.println(tEnd - tStart);
     } /* ~950 ms */
-
 }
